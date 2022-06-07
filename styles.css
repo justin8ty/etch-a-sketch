@@ -1,13 +1,9 @@
-:root {
-  --grid-cols: 1;
-  --grid-rows: 1;
-}
-
-#drawGrid:hover {
-  background-color: yellow;
-}
-
 /* Header */
+
+body {
+  background-color: DarkSalmon;
+  text-align: center;
+}
 
 .title {
   margin-top: 0%;
@@ -15,15 +11,23 @@
 
 /* Main */
 
-#drawGrid {
-  display: grid;
-  grid-gap: 0em;
-  grid-template-rows: repeat(var(--grid-rows), 1fr);
-  grid-template-columns: repeat(var(--grid-cols), 1fr);
+.sketchBoard {
+  display: inline-grid;
+  width: 500px;
+  height: 500px;
+  border: 8px solid;
+  border-radius: 3px;
+  padding: 3px;
+  background-color: gainsboro;
 }
 
-.grid-item {
-  padding: 1em;
-  border: 1px solid #ddd;
-  text-align: center;
+.sketchBoard:hover {
+  cursor: pointer;
 }
+
+.pixel {
+  user-select: none;
+  border-radius: 2px;
+}
+
+/* Footer */
