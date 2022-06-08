@@ -18,6 +18,7 @@ This project is designed as part of **The Odin Project's** wonderful Web Develop
 - [x] Use slider over input number
 - [x] Improve understanding of DOM
 - [ ] Only initiate drawing when `onmousedown`
+- [ ] Implement keyboard shortcuts
 
 ## Resources
 
