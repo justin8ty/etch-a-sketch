@@ -1,6 +1,8 @@
 # Etch-A-Sketch
 
-This is **Etch-A-Sketch**, now remade in a digital format!
+This is **Etch A Sketch**, reimagined in a digital, yet familiar format.
+
+![etch-a-sketch](./images/etch-a-sketch.png)
 
 ## Live Preview
 
@@ -15,7 +17,7 @@ This project is designed as part of **The Odin Project's** wonderful Web Develop
 - [x] Implement vibrant color scheme
 - [x] Use slider over input number
 - [x] Improve understanding of DOM
-- [] Only initiate drawing when `onmousedown`
+- [ ] Only initiate drawing when `onmousedown`
 
 ## Resources
 
@@ -31,7 +33,5 @@ Below are a collection of resources which helped improve my skills :sparkles: wh
 - [HTML DOM Element firstChild Property](https://www.w3schools.com/jsref/prop_node_firstchild.asp)
 - [HTML input max Attribute](https://www.w3schools.com/tags/att_input_max.asp)
 - [How to Style Input Type Range in Chrome, Firefox, and IE | Brenna O'Brien](https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html)
-
-### Non-Technical
 
 Built with :heart: to **The Odin Project** ~
