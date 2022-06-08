@@ -1,8 +1,12 @@
 //Defaults//
 
-const resetColor = "gainsboro";
+const resetColor = "MintCream";
 let color = "black";
 let sizeInput = 16;
+
+// Needs to be initialized early
+
+const sizeDisplay = document.querySelector(".sizeDisplay");
 
 // Setup grid
 
@@ -20,8 +24,11 @@ function setupGrid(sizeInput) {
     const grid = document.createElement("div");
     grid.classList.add("pixel");
     grid.addEventListener("mouseover", colorGrid);
+    // grid.addEventListener("mousedown", colorGrid);
     sketchBoard.appendChild(grid);
   }
+
+  sizeDisplay.textContent = `${sizeInput} x ${sizeInput}`;
 }
 
 setupGrid(sizeInput);
@@ -34,26 +41,27 @@ const eraserBtn = document.querySelector(".eraserBtn");
 
 blackBtn.onclick = () => changeColor("black");
 rainbowBtn.onclick = () => changeColor("rainbow");
-eraserBtn.onclick = () => changeColor("gainsboro");
+eraserBtn.onclick = () => changeColor("MintCream");
 
 const resetBtn = document.querySelector(".resetBtn");
 resetBtn.onclick = () => resetGrid();
 
 const sizeSlider = document.querySelector(".sizeInput");
-const sizeDisplay = document.querySelector(".sizeDisplay");
-sizeSlider.onmousemove = (e) => updateSizeValue(e.target.value);
+sizeSlider.onmousemove = (e) => updateSize(e.target.value);
 sizeSlider.onchange = (e) => changeSize(e.target.value);
 
-const submitBtn = document.querySelector(".submitBtn");
-submitBtn.addEventListener("click", changeSize);
+// const submitBtn = document.querySelector(".submitBtn");
+// submitBtn.addEventListener("click", changeSize);
 
 // Option functions
 
 // Questions: How can I route onclick to colorGrid?
+// How do I make the grid listens only when mouse clicks?
 
-function colorGrid() {
+function colorGrid(e) {
+  // if (e.type === "mouseover" && !mousedown) return;
   if (color === "rainbow") {
-    this.style.backgroundColor = `hsl(${Math.random() * 360}, 70%, 50%`;
+    this.style.backgroundColor = `hsl(${Math.random() * 360}, 80%, 50%`;
   } else {
     this.style.backgroundColor = color;
   }
@@ -71,7 +79,7 @@ function changeSize(value) {
   }
 }
 
-function updateSizeValue(value) {
+function updateSize(value) {
   sizeDisplay.textContent = `${value} x ${value}`;
 }
 
