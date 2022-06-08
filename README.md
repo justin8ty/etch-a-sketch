@@ -1,4 +1,4 @@
-# Etch-A-Sketch
+# Etch A Sketch
 
 This is **Etch A Sketch**, reimagined in a digital, yet familiar format.
 
