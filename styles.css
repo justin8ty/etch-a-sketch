@@ -1,33 +1,199 @@
+:root {
+  background-image: linear-gradient(to right, #f39464, #f25157);
+}
+
+@font-face {
+  font-family: frankftmed;
+  src: url(./assets/Frankfurter\ Medium\ Regular.ttf);
+}
+
+@font-face {
+  font-family: frankft;
+  src: url(./assets/Frankfurter\ Std\ Regular.otf);
+}
+
+@font-face {
+  font-family: awanzm;
+  src: url(./assets/AwanZaman\ Regular.ttf);
+}
+
 /* Header */
 
 body {
-  background-color: DarkSalmon;
+  /* background-color: DarkSalmon; */
   text-align: center;
+  font-family: frankftmed;
+  margin: 0%;
+  background-attachment: fixed;
+}
+
+header {
+  font-family: frankftmed;
+  color: aliceblue;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  letter-spacing: 0.1em;
+
+  /* Mica effect */
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
 .title {
   margin-top: 0%;
 }
 
+.title > img {
+  margin-top: 5px;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 100;
+}
+
 /* Main */
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+}
+
+/* Buttons */
+
+button {
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(240, 248, 255, 0.8);
+  font-family: awanzm;
+  font-weight: bold;
+  font-size: 25px;
+  color: #e45151;
+  height: 60px;
+}
+
+button:hover {
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 200px;
+}
+
+/* Sketchboard */
+
+/* Question: Why does the pixel border cause grid to break when changeSize?
+Fixed: Remove firstChild when setupGrid */
 
 .sketchBoard {
   display: inline-grid;
-  width: 500px;
-  height: 500px;
-  border: 8px solid;
-  border-radius: 3px;
+  width: 45vw;
+  height: 45vw;
+  max-height: 546px;
+  max-width: 546px;
+  border: 5px solid #f38d63;
+  border-radius: 5px;
   padding: 3px;
   background-color: gainsboro;
 }
 
+.size {
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(240, 248, 255, 0.8);
+  font-family: awanzm;
+  font-weight: bold;
+  font-size: 25px;
+  color: #e45151;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  outline: none;
+  background: transparent;
+}
+
+.sizeInput {
+  border: none;
+  cursor: pointer;
+  font-family: awanzm;
+  font-size: 25px;
+  max-width: 160px;
+  height: 30px;
+  background-color: #ffa38256;
+  cursor: text;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.submitBtn {
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+  font-family: awanzm;
+  font-weight: bold;
+  font-size: 25px;
+  color: #e45151;
+  height: 60px;
+}
+
 .sketchBoard:hover {
   cursor: pointer;
+
+  /* border: 3px solid #f25859; */
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.6);
+  transform: translateY(0px);
+  transition: transform 0.2s;
 }
 
 .pixel {
   user-select: none;
-  border-radius: 2px;
+  transition: all 0.2s;
+  cursor: crosshair;
+  border: 1px rgba(0, 0, 0, 0.404) solid;
 }
 
-/* Footer */
+/* Header */
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 4px solid rgba(30, 34, 43, 0.5);
+  background-color: rgba(30, 34, 43);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* Firefox, Chrome */
+  min-height: 50px;
+  padding: 0 0 0 0;
+  color: #c8c9ca;
+  position: absolute;
+  bottom: 0;
+  height: 4.8rem;
+  letter-spacing: 0.05em;
+  font-family: awanzm;
+  font-size: 25px;
+}

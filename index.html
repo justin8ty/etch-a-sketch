@@ -11,25 +11,31 @@
   </head>
   <body>
     <header>
-      <h1 class="title">Etch-A-Sketch</h1>
-      <h2>A classic game, reimagined in a digital format.</h2>
+      <h1 class="title">
+        Etch A Sketch &#160; <img src="./images/line.png" width="3%" />
+      </h1>
+      <h2>
+        A classic game, reimagined <br />
+        in a digital, yet familiar format.
+      </h2>
     </header>
     <main>
-      <div class="sketchBoard"></div>
       <div class="buttons">
-        <button class="blackBtn">Black</button>
-        <button class="rainbowBtn">Rainbow</button>
-        <button class="eraserBtn">Eraser</button>
+        <button class="blackBtn" value="black">Black</button>
+        <button class="rainbowBtn" value="rainbow">Rainbow</button>
+        <button class="eraserBtn" value="gainsboro">Eraser</button>
         <button class="resetBtn">Reset</button>
         <div class="size">
           Set Size:
-          <input class="sizeInput" type="number" value="16" />
-          <input class="submitBtn" type="submit" />
+          <input class="sizeInput" type="range" value="16" />
+          <p class="sizeDisplay"></p>
+          <!-- <input class="submitBtn" type="submit" /> -->
         </div>
       </div>
+      <div class="sketchBoard"></div>
     </main>
     <footer>
-      <div class="footer">Copyright © Tan Jin Yi 2022</div>
+      <div class="footer">Copyright &copy; Tan Jin Yi 2022</div>
     </footer>
   </body>
 </html>

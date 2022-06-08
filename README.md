@@ -21,6 +21,9 @@ Below are a collection of resources which helped improve my skills :sparkles: wh
 - [CSS grid-template property](https://www.w3schools.com/cssref/pr_grid-template.asp)
 - [Colors HSL](https://www.w3schools.com/colors/colors_hsl.asp)
 - [html - Get the input value after pressing submit button in JavaScript - Stack Overflow](https://stackoverflow.com/questions/56923127/get-the-input-value-after-pressing-submit-button-in-javascript)
+- [How to Center in CSS with CSS Grid](https://coryrylan.com/blog/how-to-center-in-css-with-css-grid)
+- [HTML DOM Element removeChild Method](https://www.w3schools.com/jsref/met_node_removechild.asp)
+- [HTML DOM Element firstChild Property](https://www.w3schools.com/jsref/prop_node_firstchild.asp)
 
 ### Non-Technical
 
