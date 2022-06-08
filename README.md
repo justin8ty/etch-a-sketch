@@ -2,7 +2,7 @@
 
 This is **Etch A Sketch**, reimagined in a digital, yet familiar format.
 
-![etch-a-sketch](./images/etch-a-sketch.png)
+![etch-a-sketch](./images/chrome_qSJRQ.png)
 
 ## Live Preview
 
