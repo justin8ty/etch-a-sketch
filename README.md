@@ -11,6 +11,7 @@ This project is hosted on **GitHub Pages**. Feel free to [try it out](https://ra
 This project is designed as part of **The Odin Project's** wonderful Web Development curriculum.
 
 - [x] Explore mica effect
+- [x] Implement pixel and button animations
 - [x] Implement vibrant color scheme
 - [x] Use slider over input number
 - [x] Improve understanding of DOM
