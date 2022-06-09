@@ -183,7 +183,7 @@ But this project was starting to eat a lot time :( */
   padding: 3px;
   margin-top: 2px;
   background-color: MintCream;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 .sketchBoard:hover {
@@ -207,7 +207,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -220,8 +219,12 @@ footer {
   letter-spacing: 0.05em;
   font-family: awanzm;
   font-size: 1.7em;
-  letter-spacing: 0.1em;
+  position: fixed;
   color: aliceblue;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 
   /* Mica effect */
   backdrop-filter: blur(5px);
