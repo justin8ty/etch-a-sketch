@@ -181,17 +181,17 @@ But this project was starting to eat a lot time :( */
   border: 8px solid #ff7c7cad;
   border-radius: 5px;
   padding: 3px;
-  margin-top: 2px;
+  margin-top: 6px;
   background-color: MintCream;
   margin-bottom: 80px;
+  transition: transform 0.4s;
 }
 
 .sketchBoard:hover {
   cursor: pointer;
   backdrop-filter: blur(3px);
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.6);
-  transform: translateY(-2px);
-  transition: transform 0.3s;
+  transform: translateY(-4px);
 }
 
 .pixel {
