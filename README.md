@@ -6,7 +6,7 @@ This is **Etch A Sketch**, reimagined in a digital, yet familiar format.
 
 ## Live Preview
 
-This project is hosted on **GitHub Pages**. Feel free to [try it out](https://raineedust.github.io/etch-a-sketch/)!
+This project is hosted on **GitHub Pages**. Feel free to [try it out](https://tjy-justin.github.io/etch-a-sketch/)!
 
 ## Motivation and Goals
 
